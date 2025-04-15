@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">Profile</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#tools">Text Tool</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- About / Profile Section -->
+    <section id="about">
+      <h1>About Me</h1>
+      <div class="profile-container">
+        <div class="profile-image">
+          <img src="images/profile.jpeg" alt="My Photo" />
+        </div>
+        <div class="about-text">
+          <p>Hi! I'm Maripe.pavani, B.Tech CSE student at IIIT Hyderabad. I’m passionate about software systems and web development, and I enjoy building cool projects with HTML, CSS, and JavaScript.</p>
+          <a class="cv-link" href="cv.pdf" target="_blank">Download CV</a>
+        </div>
+      </div>
+
+      <!-- Birthplace Images -->
+      <div class="birthplace-images">
+        <img src="images/birthplace1.jpeg" class="birthplace-img" alt="Place 1" />
+        <img src="images/birthplace2.jpeg" class="birthplace-img" alt="Place 2" />
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>B.Tech in Computer Science and Engineering</h3>
+        <p class="institution">IIIT Hyderabad (2024 - Present)</p>
+        <ul>
+          <li>Core subjects: DSA, Software Systems, Computer Organization</li>
+          <li>Clubs: Web Dev Club, Coding Club</li>
+        </ul>
+      </div>
+
+      <div class="education-item">
+        <h3>Higher Secondary Education</h3>
+        <p class="institution">ABC Junior College</p>
+        <ul>
+          <li>Stream: MPC</li>
+          <li>Percentage: 96%</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-category">
+        <h3>Programming</h3>
+        <div class="skill-item">
+          <span class="skill-name">Python</span>
+          <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">C/C++</span>
+          <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+          <span class="skill-percent">80%</span>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Web Development</h3>
+        <div class="skill-item">
+          <span class="skill-name">HTML/CSS</span>
+          <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+          <span class="skill-percent">90%</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+          <span class="skill-percent">75%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Text Analysis Tool -->
+    <section id="tools">
+      <h2>Text Analysis Tool</h2>
+      <textarea id="inputText" rows="6" placeholder="Enter or paste your text here..."></textarea>
+      <button id="analyzeBtn">Analyze</button>
+
+      <div id="analysisResults">
+        <div class="result-section">
+          <h3>Pronouns Found:</h3>
+          <div id="pronounList"></div>
+        </div>
+        <div class="result-section">
+          <h3>Prepositions Found:</h3>
+          <div id="prepositionList"></div>
+        </div>
+        <div class="result-section">
+          <h3>Articles Found:</h3>
+          <div id="articleList"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Portfolio | IIIT Hyderabad</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
